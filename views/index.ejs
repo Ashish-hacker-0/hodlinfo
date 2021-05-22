@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/49eef855a9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <ul>
+            <li>
+<p id="title">HODLINFO<span id="com">.com</span></p>
+<p id="power">Powered By <span id="comp">Finstreet</span></p>
+            </li>
+            <li id="mid">
+               <select name="" id="">
+                   <option style="color: white;" value="">INR</option>
+               </select>
+               <select name="" id="">
+                <option value="">BTC</option>
+            </select>
+            </li>
+            <li id="last">
+                <ul id="lastu">
+                    <li id="no">
+                       58
+                    </li>
+                    <li id="telegram">
+                        <i class="fab fa-telegram-plane"> </i> Connect Telegram
+                    </li>
+                  
+                       
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                               
+                              </label>
+                          
+                  
+                </ul>
+                <!-- <span id="no">58</span>
+                <span id="telegram"><i class="fab fa-telegram-plane"> </i> Connect Telegram</span>
+              
+                <span id="check">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                       
+                      </label>
+                    </span> -->
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <table cellspacing="0" cellpadding="2">
+           <thead>
+               <th>
+                   #
+               </th>
+               <th>
+name
+            </th>
+            <th>
+Last
+            </th>
+            <th>
+Buy/Sell Price
+            </th>
+            <th>
+Volume
+            </th>
+            <th>
+base_unit
+            </th>
+
+           </thead>
+<%for(var i=0;i<10;i++){%>
+
+            <tr>
+                <td>
+   <%=i+1%>
+                </td>
+                <td>
+    <%=data[i].name%>
+             </td>
+             <td>
+                &#8377;    <%=data[i].last%>
+             </td>
+             <td>
+                &#8377;  <%=data[i].buy%>/	&#8377;  <%=data[i].sell%>
+             </td>
+             <td>
+                <%=data[i].volume%>
+             </td>
+             <td>
+                <%=data[i].base_unit%>
+             </td>
+    
+            </tr>
+           <%}%>
+         
+        </table>
+    </main>
+</body>
+</html>

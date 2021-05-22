@@ -1,0 +1,183 @@
+body{
+    background-color: #191D28;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+#title{
+    color: #3DC6C1;
+    font-size: 190%;
+}
+#com{
+    color: white;
+    font-size: 70%;
+}
+#power{
+   color: grey;
+}
+#comp{
+    color: #3DC6C1;
+}
+#mid{
+    
+    justify-content: space-between;
+}
+table {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+   padding: 4%;
+    justify-content: space-between;
+    border: none;
+    border-collapse: separate;
+    border-spacing: 0 0.5em;
+    font-size: 120%;
+}
+
+tr{
+  
+   
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+   
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    width: 0;
+    height: 0;
+    opacity: 0;
+   
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #2E3241;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #3DC6C1;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2E3241;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2E3241;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+th{
+    color:#5f657a ;
+}
+th, td {
+    padding: 8px;
+  }
+  tr td:first-child { border-top-left-radius: 10px; }
+  tr:first-child td:last-child { border-top-right-radius: 10px; }
+  tr td:first-child { border-bottom-left-radius: 10px; }
+  tr td:last-child { border-bottom-right-radius: 10px; }
+td{
+    
+    border: none;
+    background-color: #2E3241;
+    font-weight: 700;
+}
+
+#mid select{
+    margin-top: 30%;
+    background-color: #2E3241;
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 2px;
+   
+    
+    
+}
+#mid select option:first-child{
+    color: blue;
+}
+#last {
+vertical-align: baseline;
+    width:28vw;
+    padding-right: 4%;
+    
+}
+#last #vmid{
+    margin-top: 14.5%;
+    
+}
+#last ul li{
+  
+}
+#no{
+    vertical-align: middle;
+    text-align: center;
+    border: 3px solid #3DC6C1;
+    padding: 3%;
+    border-radius: 50%;
+    justify-content: center;
+
+   top:2px;
+}
+#lastu{
+    margin-top: 10%;
+}
+#telegram{
+    background-color: #3DC6C1;
+    padding: 2%;
+    border-radius: 4px;
+    margin-top: 1%;
+}
+#slider{
+    background-color: #2E3241;
+    
+}
+#check{
+    margin-top: -30rem;
+}
+
+ul{
+    list-style: none;
+   display: flex;
+   justify-content: space-between;
+}
+li{
+    display: inline-block;
+    line-height: 0.4;
+    
+}
